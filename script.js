@@ -2,7 +2,6 @@ const menu = document.querySelector("#mobile-menu");
 const menuItems = document.querySelectorAll(".menuitem");
 const audio = new Audio("erro.mp3");
 
-location.hash = "general-title";
 window.scrollTo(0, 0);
 
 function toggleMenu() {
