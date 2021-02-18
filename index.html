@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav id="desktop-menu">
+          <li>
+            <a href="#presentation">Qui suis-je ?</a>
+          </li>
+
+          <li>
+              <a href="#skills">Mes compétences</a>
+          </li>
+
+          <li>
+              <a href="#work">Mes travaux</a>
+          </li>
+
+          <li>
+              <a href="#contact">Contact</a>
+          </li>
+        </nav>
+
+        <button id="hamburger-menu" onclick="toggleMenu()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <div id="mobile-menu" style="display: none;">
+            <button style="position:absolute; right: 20px; top:10px" id="hamburger-menu" onclick="toggleMenu()">
+                <span 
+                style="color:white;"
+                class="material-icons">close</span>
+            </button>
+           <nav>
+                <li>
+                  <a class="menuitem" href="#presentation">Qui suis-je ?</a>
+                </li>
+      
+                <li>
+                    <a class="menuitem" href="#skills">Mes compétences</a>
+                </li>
+      
+                <li>
+                    <a class="menuitem" href="#work">Mes travaux</a>
+                </li>
+      
+                <li>
+                    <a class="menuitem" href="#contact">Contact</a>
+                </li
+                
+            </nav>
+        </div>
+      </header>
+
+      <section id="general-title">
+        <h1>
+          I AM A
+        </h1>
+        </br>
+        <h1 id="writing">DEVELOPPER</h1><span id="carret">_</span>
+      </section>
+
+      <section id="presentation">
+        <h2 class="title">QUI SUIS-JE</h2>
+        
+        <div class="fake-macbar">
+          <div class="yellow"></div>
+          <div class="green"></div>
+          <div class="red"></div>
+        </div>
+
+        <code class="fake-editor">
+          <p>
+          $>cd Documents
+          </br>
+          $>cat presentation.txt
+          </p>
+          </br>
+          <p>
+          Esprit curieux, créatif j’aime saisir les opportunités qui s’offrent à moi et relever des défis. Le domaine du web me permet d’apprendre constemment et élargit le champ des possibles avec toujours plus d’outils. 
+          </br>
+          Passioné d’informatique depuis (presque) toujours, le web est mon terrain de jeu.
+         </p>
+          </br>
+          <p>
+          $><span class="blinkin">_</span>
+          </p>
+        </code>
+      </section>
+
+      <section id="skills">
+        <h2 class="title">MES COMPÉTENCES</h2>
+        
+        <div class="card">
+           
+         <header>
+            <span class="card-title">skills.exe</span>
+            <div class="close-btn">
+                <span 
+                class="material-icons">
+                    close
+                </span>
+            </div>
+          </header>
+
+          <div class="content">
+            <ul>
+              <li>
+                <span class="material-icons">
+                    table_chart
+                  </span>
+                Design d’interface</li>
+              <li>
+                <span class="material-icons">
+                  apps
+                </span>
+                Dev. de composants front-end</li>
+              <li>
+                <span class="material-icons">
+                    mouse
+                </span>
+                Dev. Single Page App</li>
+              <li>
+                <span class="material-icons">
+                    cloud
+                </span>
+                Dev./utilisation d’API</li>
+              <li>
+                <span class="material-icons">
+                  phone_android
+                </span>
+                Dev. app mobile
+               </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2 class="title">MES TRAVAUX</h2>
+        <div class="link-bloc">
+          <a href="https://codesandbox.io/u/g0tie" target="_blank" >CodeSandbox.io
+            <span class="material-icons">
+                keyboard_arrow_right
+            </span>
+          </a>
+          
+        </div>
+
+        <div class="link-bloc">
+            <a href="https://github.com/g0tie" target="_blank" >GitHub
+              <span class="material-icons">
+                  keyboard_arrow_right
+              </span>
+            </a>
+           
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="title">CONTACT</h2>
+       
+        <code class="fake-editor">
+          <span style="color:#FF1F1F">const</span> <span style="color:#7AFFFF">contact</span> = {
+          </br>
+              <span class="js-object">email: <a style="color:#FFCA0D;text-decoration:none" target="_blank" href="mailto:gaultierbeguepro@gmail.com">“gaultierbeguepro@gmail.com”</a>,</span> </br>
+              <span class="js-object">linkedin: <a style="color:#FFCA0D;text-decoration:none" target="_blank" href="https://www.linkedin.com/in/gaultier-begue/">“https://www.linkedin.com/in/gaultier-begue/”</a></span>, </br>
+          }
+        </code>
+      </section>
+    </main>
+    <button class="scrolltop" onclick="window.scrollTo(0,0)">
+      <span class="material-icons">
+        keyboard_arrow_up
+      </span>
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>

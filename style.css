@@ -1,0 +1,364 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #262626;
+  color: white;
+  width: 100vw;
+  z-index: 999999;
+  height: 100vh;
+}
+
+#mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#hamburger-menu {
+  display: none;
+  border: none;
+  background: none;
+  padding: 10px;
+}
+
+#hamburger-menu:focus {
+  outline: none;
+}
+
+#hamburger-menu:hover {
+  cursor: pointer;
+}
+
+main header {
+  width: 100%;
+}
+main header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+main header nav li {
+  list-style-type: none;
+  margin-right: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+  background: #262626;
+}
+
+main header nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: bold;
+}
+
+/*---------------------*/
+#general-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+#general-title h1 {
+  font-size: 90px;
+}
+
+#general-title #writing {
+  position: relative;
+  background-color: #262626;
+  color: white;
+  padding: 5px 3vw;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 2.5s 1s steps(10, end) typing;
+}
+
+#carret {
+  font-size: 90px;
+  display: inline;
+  color: white;
+  animation: blink-caret 0.75s 3.5s step-end infinite;
+}
+/*---------------------*/
+
+#presentation {
+  background: #ffd15c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------*/
+#skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills .card:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#skills .card {
+  box-shadow: 8px 8px 0 rgb(0, 0, 0, 0.4);
+  line-height: 2.5;
+  margin: 20px 0;
+}
+
+#skills .card .close-btn {
+  background: red;
+  width: 70px;
+  height: 40px;
+  float: right;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: clickMe 1s infinite;
+}
+
+#skills .card header {
+  background: #ebebeb;
+}
+
+#skills .card .content {
+  padding: 40px;
+}
+
+#skills .card li {
+  font-family: "Ubuntu Mono", monospace;
+  list-style-type: none;
+}
+
+#skills .card-title {
+  margin-left: 10px;
+}
+
+#skills .card span {
+  vertical-align: middle;
+}
+/*---------------------*/
+
+#work {
+  background-color: #ffd15c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#work .link-bloc {
+  background: white;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 8px 8px 0 rgb(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+#work .link-bloc a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  vertical-align: bottom;
+}
+
+#work .link-bloc a:hover {
+  color: #141cff;
+}
+
+#work .link-bloc span {
+  vertical-align: top;
+  float: right;
+  font-size: 40px !important;
+}
+/*------------*/
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.fake-editor {
+  width: 40%;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+  padding: 20px 30px;
+}
+
+#contact .fake-editor {
+  padding: 40px 30%;
+}
+
+.fake-editor p {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.fake-macbar {
+  width: calc(40% + 60px);
+  background: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fake-macbar div {
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.fake-macbar .yellow {
+  background: #ffc700;
+}
+.fake-macbar .green {
+  background: #00ff57;
+}
+.fake-macbar .red {
+  background: #ff0000;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 30px 0;
+}
+
+.js-object {
+  margin-left: 4em;
+}
+
+.scrolltop {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  bottom: 32px;
+  border: solid white 1px;
+  border-radius: 32px;
+  right: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.scrolltop:focus {
+  outline: none;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 720px) {
+  main header #desktop-menu {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  #work .link-bloc {
+    width: 80%;
+  }
+
+  #general-title h1 {
+    font-size: 40px;
+  }
+
+  #carret {
+    font-size: 40px;
+  }
+
+  .fake-editor {
+    width: auto;
+    padding: 10px;
+  }
+
+  #presentation .fake-macbar {
+    width: 100%;
+  }
+
+  #skills .card .content {
+    padding: 10px;
+  }
+
+  .js-object {
+    margin: 0;
+  }
+
+  #contact .fake-editor {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+
+/*******ANIMATION*******/
+
+@keyframes typing {
+  from {
+    width: 0;
+    padding: 5px 0;
+  }
+  to {
+    width: 100%;
+    padding: 5px 3vw;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@keyframes clickMe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
