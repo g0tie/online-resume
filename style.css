@@ -125,8 +125,7 @@ main header nav li a {
   justify-content: center;
   align-items: center;
 }
-
-#skills .card:hover {
+ #skills .card:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
@@ -316,7 +315,11 @@ main header nav li a {
   #presentation .fake-macbar {
     width: 100%;
   }
-
+  
+   #skills .card:hover {
+    transform: scale(1);
+  }
+  
   #skills .card .content {
     padding: 10px;
   }
@@ -354,11 +357,11 @@ main header nav li a {
   }
 }
 
-@keyframes clickMe {
+/*@keyframes clickMe {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.2);
   }
-}
+}*/
