@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+strong {
+  color:#00ff57
+}
+
+i {
+  font-size:25px;
+  vertical-align: middle;
+}
+
 #mobile-menu {
   position: fixed;
   top: 0;
@@ -132,6 +141,14 @@ main header nav li {
   justify-content: center;
   align-items: center;
 }
+
+#skills .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:  center;
+}
+
  #skills .card:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -143,7 +160,9 @@ main header nav li {
 #skills .card {
   box-shadow: 8px 8px 0 rgb(0, 0, 0, 0.4);
   line-height: 2.5;
-  margin: 20px 0;
+  margin: 20px 20px;
+  flex-shrink: 0;
+  background: white;
 }
 
 #skills .card .close-btn {
@@ -323,6 +342,11 @@ main header nav li {
     transform: scale(1);
   }
   
+  #skills .card {
+    margin-right:0;
+    margin-left: 0;
+  }
+
   #skills .card .content {
     padding: 10px;
   }
