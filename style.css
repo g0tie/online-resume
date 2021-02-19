@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #262626;
+  background:white;
   color: white;
   width: 100vw;
   z-index: 999999;
@@ -36,18 +36,21 @@ section {
   padding-bottom: 50px;
 }
 
-#hamburger-menu {
-  display: none;
+.hamburger-menu {
   border: none;
   background: none;
-  padding: 10px;
+  position:absolute; 
+  left: 10px; 
+  top:10px
 }
 
-#hamburger-menu:focus {
+.hamburger-menu span {font-size:50px}
+
+.hamburger-menu:focus {
   outline: none;
 }
 
-#hamburger-menu:hover {
+.hamburger-menu:hover {
   cursor: pointer;
 }
 
@@ -65,15 +68,19 @@ main header nav li {
   margin-right: 10px;
   margin-top: 30px;
   font-size: 20px;
-  background: #262626;
 }
 
-main header nav li a {
+#mobile-menu nav li a {
   text-decoration: none;
-  color: white;
+  color: #262626;
   padding: 10px;
   font-family: "Ubuntu Mono", monospace;
   font-weight: bold;
+  font-size: 40px;
+}
+
+#mobile-menu nav li a:hover {
+  color:#141cff;  
 }
 
 /*---------------------*/
@@ -188,9 +195,6 @@ main header nav li a {
   margin-bottom: 20px;
   box-shadow: 8px 8px 0 rgb(0, 0, 0, 0.4);
   padding: 20px;
-}
-
-#work .link-bloc a {
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -198,8 +202,10 @@ main header nav li a {
   vertical-align: bottom;
 }
 
-#work .link-bloc a:hover {
+
+#work .link-bloc:hover {
   color: #141cff;
+  box-shadow: 8px 8px 0 #141cff;
 }
 
 #work .link-bloc span {
@@ -287,13 +293,10 @@ main header nav li a {
 }
 /* RESPONSIVE */
 @media screen and (max-width: 720px) {
-  main header #desktop-menu {
-    display: none;
+  #mobile-menu nav li a {
+    font-size:20px;
   }
-
-  #hamburger-menu {
-    display: block;
-  }
+  .hamburger-menu span { font-size: 30px;}
 
   #work .link-bloc {
     width: 80%;

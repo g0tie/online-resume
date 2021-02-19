@@ -17,13 +17,3 @@ menuItems.forEach((item) => {
 });
 
 document.querySelector("#skills").addEventListener("click", () => audio.play());
-document.querySelectorAll(".link-bloc").forEach((el) => {
-  el.addEventListener(
-    "mouseover",
-    () => (el.style = " box-shadow: 8px 8px 0 #141cff;")
-  );
-  el.addEventListener(
-    "mouseleave",
-    () => (el.style = " box-shadow: 8px 8px 0 rgb(0,0,0,0.4)")
-  );
-});

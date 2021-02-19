@@ -14,7 +14,7 @@
   <body>
     <main>
       <header>
-        <nav id="desktop-menu">
+        <!--<nav id="desktop-menu">
           <li>
             <a href="#presentation">Qui suis-je ?</a>
           </li>
@@ -30,16 +30,16 @@
           <li>
               <a href="#contact">Contact</a>
           </li>
-        </nav>
+        </nav>-->
 
-        <button id="hamburger-menu" onclick="toggleMenu()">
+        <button class="hamburger-menu" onclick="toggleMenu()">
             <span class="material-icons">menu</span>
         </button>
 
         <div id="mobile-menu" style="display: none;">
-            <button style="position:absolute; right: 20px; top:10px" id="hamburger-menu" onclick="toggleMenu()">
+            <button  class="hamburger-menu" onclick="toggleMenu()">
                 <span 
-                style="color:white;"
+                style="color:#262626;"
                 class="material-icons">close</span>
             </button>
            <nav>
@@ -149,23 +149,24 @@
 
       <section id="work">
         <h2 class="title">MES TRAVAUX</h2>
-        <div class="link-bloc">
-          <a href="https://codesandbox.io/u/g0tie" target="_blank" >CodeSandbox.io
-            <span class="material-icons">
-                keyboard_arrow_right
-            </span>
-          </a>
-          
-        </div>
 
-        <div class="link-bloc">
-            <a href="https://github.com/g0tie" target="_blank" >GitHub
-              <span class="material-icons">
-                  keyboard_arrow_right
-              </span>
-            </a>
-           
-        </div>
+        <a class="link-bloc" href="https://codesandbox.io/u/g0tie" target="_blank" >
+          <div >
+          CodeSandbox.io
+          <span class="material-icons">
+              keyboard_arrow_right
+          </span>
+          </div>
+        </a>
+
+        <a class="link-bloc" href="https://github.com/g0tie" target="_blank" >
+          <div >
+          GitHub
+          <span class="material-icons">
+              keyboard_arrow_right
+          </span>
+          </div>
+        </a>
       </section>
 
       <section id="contact">
